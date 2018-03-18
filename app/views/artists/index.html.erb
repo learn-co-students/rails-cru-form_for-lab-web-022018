@@ -1,0 +1,9 @@
+<% @artists.each do |artist| %>
+  <%= artist.name %><br>
+  <% for song in artist.list_songs %>
+  <%= song %><br>
+  <% end %>
+  <% for genre in artist.list_genres %>
+  <%= genre %><br>
+  <% end %>
+<% end %>
