@@ -1,0 +1,5 @@
+<h1>Edit Form</h1>
+<%= render "form" %>
+<%= form_for @artist, method: :delete do |f| %>
+  <%= f.submit name="Delete" %>
+<% end %>
