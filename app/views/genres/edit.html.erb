@@ -1,0 +1,6 @@
+<h1>Edit Genre</h1>
+<%= form_for(@genre) do |x| %>
+  <label>Genre name:</label>
+  <%= x.text_field :name %>
+  <%= x.submit %>
+<% end %>
