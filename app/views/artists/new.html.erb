@@ -1,0 +1,10 @@
+<!-- <h1>Artists#new</h1>
+<p>Find me in app/views/artists/new.html.erb</p> -->
+<%if flash[:error]%>
+  <ul>
+    <% flash[:error].each do |error|%>
+    <li><%=error%></li>
+    <%end%>
+  </ul>
+<%end%>
+<%= render  "form"%>

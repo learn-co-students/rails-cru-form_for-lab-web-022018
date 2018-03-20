@@ -1,4 +1,22 @@
 Rails.application.routes.draw do
+  # get 'genres/index'
+  #
+  # get 'genres/new'
+  #
+  # get 'genres/show'
+  #
+  # get 'songs/index'
+  #
+  # get 'songs/new'
+  #
+  # get 'songs/show'
+  #
+  # get 'artists/index'
+  #
+  # get 'artists/new'
+  #
+  # get 'artists/show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +71,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  resources :artists, only: [:index, :new, :show, :create, :edit, :update]
+  resources :songs, only: [:index, :new, :show, :create, :edit, :update]
+  resources :genres, only: [:index, :new, :show, :create, :edit, :update]
 end
