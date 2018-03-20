@@ -1,0 +1,6 @@
+<h1>My Song </h1>
+<label>Name:</label><%=@song.name%>
+<label>Artist:</label><%=@song.artist.name%>
+<label>Genre:</label><%=@song.genre.name%>
+<%= link_to "My Artist", @song.artist  %>
+<%= link_to "My Genre", @song.genre  %>
